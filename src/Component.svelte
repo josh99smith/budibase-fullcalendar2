@@ -63,7 +63,7 @@
     }
     if(dataProvider3.rows){
       dataProvider3.rows.forEach(event => {
-        let eventColor3 = mappingColor2 ?? '#ffffff' 
+        let eventColor3 = mappingColor3 ?? '#ffffff' 
         eventsList.push({ title: event[mappingTitle3], date: event[mappingDate3], start: event[mappingStart3], end: event[mappingEnd3], color: eventColor3, event: event, allDay: allday3  })
       });
     }
