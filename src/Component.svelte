@@ -22,14 +22,22 @@
   export let mappingStart2
   export let mappingEnd2
 
+  export let mappingTitle3
+  export let mappingDate3
+  export let mappingStart3
+  export let mappingEnd3
+
   export let dataProvider
   export let dataProvider2
+  export let dataProvider3
 
   export let mappingColor
   export let mappingColor2
+  export let mappingColor3
 
   export let allday
   export let allday2
+  export let allday3
   
   export let headerOptionsStart
   export let headerOptionsCenter
@@ -51,6 +59,12 @@
       dataProvider2.rows.forEach(event => {
         let eventColor2 = mappingColor2 ?? '#eb4034' 
         eventsList.push({ title: event[mappingTitle2], date: event[mappingDate2], start: event[mappingStart2], end: event[mappingEnd2], color: eventColor2, event: event, allDay: allday2  })
+      });
+    }
+    if(dataProvider3.rows){
+      dataProvider3.rows.forEach(event => {
+        let eventColor3 = mappingColor2 ?? '#ffffff' 
+        eventsList.push({ title: event[mappingTitle3], date: event[mappingDate3], start: event[mappingStart3], end: event[mappingEnd3], color: eventColor3, event: event, allDay: allday3  })
       });
     }
     eventsList = eventsList
